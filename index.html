@@ -15,11 +15,18 @@
       background: url(image/main.jpg);
       background-size: cover;
       background-position: center;
-      min-height: 1000px;
+      min-height: 900px;
+      text-decoration-color: black;
     }
     .section{
       padding-top: 4vw;
       padding-bottom: 4vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
     }
     @media screen and (max-width: 670px){
     header{
@@ -32,24 +39,25 @@
 
   <!-- navbar -->
 <header>
-<nav class="nav-wrapper transparent">
+<nav class="nav-wrapper teal darken-3">
   <div class="container">
-    <a href="" class="brand-log">Tarp ezeru</a>
+    <a href="" class="brand-log">TARP EŽERŲ - Sodyba poilsiui ir šventėms</a>
     <a href="" class="sidenav-trigger" data-target="mobile-menu">
       <i class="material-icons">menu</i>
     </a>
 
     <ul class="right hide-on-med-and-down">
-      <li><a href="#">Paslaugos</a></li> 
-      <li><a href="#">Galerija</a></li>
-      <li><a href="#">Kalendorius</a></li>
-      <li><a href="#">Kontaktai</a></li>
+      <li><a href="#photos">Nuotraukos</a></li> 
+      <li><a href="#services">Paslaugos</a></li>
+      <li><a href="#contact">Kontaktai</a></li>
+      <li><a href="https://www.facebook.com/tarpezeru/about/?ref=page_internal" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Tai yra Facebook">
+        <i class="fab fa-facebook"></i>
+      </a></li>
     </ul>
-    <ul class="sidenav light-blue darken-4" id="mobile-menu">
-      <li><a href="#">Paslaugos</a></li>
-      <li><a href="#">Galerija</a></li>
-      <li><a href="#">Kalendorius</a></li>
-      <li><a href="#">Kontaktai</a></li>
+    <ul class="sidenav teal darken-3" id="mobile-menu">
+      <li><a href="#" class="white-text">Nuotraukos</a></li> 
+      <li><a href="#"class="white-text">Paslaugos</a></li>
+      <li><a href="#"class="white-text">Kontaktai</a></li>
     </ul>
 
   </div>
@@ -57,8 +65,47 @@
 </header>
 
   <!-- photo / grid -->
-  <section class="container section" id="photos">
-<div class="row">
+  <section class="container section scrollspy" id="photos">
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="image/Dronas_023.jpg" alt="" class="responsive-img">
+            <span class="card-title">Teritorija</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>Sodyba įkurta ežerų krašte, Aukštaitijos nacionaliniame parke, Ignalinos rajone, vienkiemyje.Pagrindinis namas pastatytas ant ežero kranto.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="image/Dronas_021.jpg" alt="" class="responsive-img">
+            <span class="card-title">Nakvynė</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>Sodyboje 36 nakvynės vietos. 7 kambariai, kokybiškos natūralaus medžio dvigulės lovos ir su patogiais čiužiniais. Į nakvynės kainą įskaičiuota patalynė bei rankšliuosčiai.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="image/Dronas_020.jpg" alt="" class="responsive-img">
+            <span class="card-title">Švenčių salė</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>Mediniai stalai su kėdėmis, vienu metu prie jų gali susėsti 50 žmonių. Stalams uždengti galima naudoti paruoštas baltas staltieses. Tame pačiame aukšte šokių salė.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!-- <div class="row">
   <div class="col s12 l4">
     <img src="image/Dronas_009.jpg" alt="" class="responsive-img materialboxed">
   </div>
@@ -78,26 +125,137 @@
     <div class="col s12 l4">
        <img src="image/Dronas_012.jpg" alt="" class="responsive-img materialboxed">
       </div>
-      <div class="col s12 l5 offset-l1">
+      <div class="col s12 l6 offset-l1">
         <h2 class="indigo-text text-darken-4">Nuo kranto</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aliquid, quibusdam inventore cupiditate asperiores eos molliti.</p>
       </div>
-</div>
+    </div>
+    </div> -->
   </section>
   <!-- parallax -->
 <div class="parallax-container">
-  <div class="paralax">
+  <div class="parallax">
     <img src="image/Dronas_023.jpg" alt="" class="responsive-img">
   </div>
 </div>
   <!-- services / tabs -->
+<section class="container section scrollspy" id="services">
+  
+  <div class="row">
+    <div class="col s12 l4">
+      <h3 class="indigo-text text-darken-4"></h3>
+      <p>Pajusti tikrą, gyvos gamtos dvelksmą Jūs galite čia - KAIMO TURIZMO SODYBOJE “TARP EŽERŲ”. Sodyba įkurta ežerų krašte, Aukštaitijos nacionaliniame parke, Ignalinos rajone, vienkiemyje.</p>
+    </div>
+    <div class="col s12 l6 offset-l2">
+      <ul class="tabs">
+        <li class="tab col s4">
+          <a href="#nuoma" class="indigo-text text-darken-4">Salės nuoma</a>
+        </li>
+        <li class="tab col s4">
+          <a href="#nakvyne" class="indigo-text text-darken-4">Nakvynė</a>
+        </li>
+        <li class="tab col s4">
+          <a href="#pirtis" class="indigo-text text-darken-4">Pirtis</a>
+        </li>
+      </ul>
+      <div class="col s12" id="nuoma">
+        <p class="flow-text indigo-text-darken-4">Salės nuoma</p>
+<p>Mediniai stalai su kėdėmis, vienu metu prie jų gali susėsti 50 žmonių. Stalams uždengti galima naudoti paruoštas baltas staltieses. Tame pačiame aukšte, įrengta virtuvė, papildoma šokių salė.</p>      </div>
+      <div class="col s12" id="nakvyne">
+        <p class="flow-text indigo-text-darken-4">Nakvynė</p>
+        <p> Sodyboje 36 nakvynės vietos. 7 kambariai, kokybiškos natūralaus medžio dvigulės lovos ir su patogiais čiužiniais.
+          Į nakvynės kainą įskaičiuota patalynė bei rankšliuosčiai.</p>
+          <p>KAINA: 10-20 EUR/asm.</p>
+      </div>
+      <div class="col s12" id="pirtis">
+        <p class="flow-text indigo-text-darken-4">Pirtis ir kubilas</p>
+        <p>Pirtis ant ežero kranto, talpina 8 žmones, temperatūra iki +90C. Šalia pirties – lauko kubilas, kuris pripildomas vandeniu ir pašildomas iki +40C, talpina 10 žmones. Yra pirties kepurės, vantos. </p>
+        <p>KAINA: 100 EUR/1k.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- parallax -->
-
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="image/Dronas_009.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
   <!-- contact form -->
-
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigi-text text-darken-4">Rezervuokite</h2>
+        <p>Norite rezervuoti sodybą? Turite klausimų ar neaiškumų?</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Jūsų el.paštas</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class = "materialize-textarea"></textarea>
+            <label for="message">Jūsų žinutė</label>
+          </div>
+          <div class="input-field">
+            <input type="text" name="" id="date" class="datepicker">
+            <label for="date">Pasirinkite pirmos dienos datą</label>
+          </div>
+          <div class="input-field">
+            <p>Domina šios paslaugos:</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Nakvynė</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Švenčių salė</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Pirtis ir kubilas</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Siųsti</button>         
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
   <!-- footer -->
-
+  <footer class="page-footer teal darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+        <h5>Apie mus</h5>
+        <p>Šeimininkai kaimo turizmo verslą plėtoja beveik 20 metų. Dirba tik šeimos nariai, todėl kiekvienas poilsiautojas priimamas kaip artimas svečias.</p>
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h5>Kontaktai</h5>
+        <ul>
+          <i class="material-icons prefix">facebook</i>
+          <li><a href="https://www.facebook.com/tarpezeru/about/?ref=page_internal" class="white-text text-darken-3">Facebook</a>
+          <li><a href="" class="white-text text-darken-3">Phone: +37061445162</a>
+          <li><a href="" class="white-text text-darken-3">Email: info@tarpezeru.lt</a>
+        </ul>
+      </div>
+</div>
+    </div>
+    <div class="footer-copyright teal darken-4">
+      <div class="container center-align">&copy; 2021 Tarp ežerų</div>
+    </div>
+  </footer>
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
@@ -105,6 +263,13 @@
     $(document).ready(function(){
       $('.sidenav').sidenav();
       $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        yearRange:1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
     }); 
   </script>
 </body>
